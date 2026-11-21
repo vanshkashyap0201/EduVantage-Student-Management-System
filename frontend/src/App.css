@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.app {
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+    min-height: 100vh;
+
+    margin-left: 250px;
+
+    transition: margin-left 0.3s ease;
+}
+
+/* Sidebar collapsed */
+
+.main-content.sidebar-collapsed {
+    margin-left: 75px;
+}
+
+/* =========================
+   PAGE CONTENT
+========================= */
+
+.page-content {
+    width: 100%;
+    padding: 20px 25px;
+}

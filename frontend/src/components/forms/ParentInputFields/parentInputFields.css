@@ -1,0 +1,36 @@
+/* Parent input field */
+.parent-input-field {
+    margin-bottom: 2px;
+}
+
+/* Labels */
+.parent-input-field .form-label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+/* Inputs and selects */
+.parent-input-field .form-control,
+.parent-input-field .form-select {
+    min-height: 40px;
+    border: 1px solid #d8dee8;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px 12px;
+    box-shadow: none;
+}
+
+/* Focus */
+.parent-input-field .form-control:focus,
+.parent-input-field .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+/* Placeholder */
+.parent-input-field .form-control::placeholder {
+    color: #9ca3af;
+}

@@ -1,0 +1,52 @@
+/* Individual field */
+.basic-input-field {
+    margin-bottom: 2px;
+}
+
+/* Labels */
+.basic-input-field .form-label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+/* Required star */
+.required {
+    color: #dc3545;
+    margin-left: 2px;
+}
+
+/* Inputs and selects */
+.basic-input-field .form-control,
+.basic-input-field .form-select {
+    min-height: 40px;
+    border: 1px solid #d8dee8;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px 12px;
+    box-shadow: none;
+}
+
+/* Focus */
+.basic-input-field .form-control:focus,
+.basic-input-field .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+/* Placeholder */
+.basic-input-field .form-control::placeholder {
+    color: #9ca3af;
+}
+
+/* Radio buttons */
+.basic-input-field .form-check {
+    margin-bottom: 6px;
+}
+
+.basic-input-field .form-check-label {
+    font-size: 14px;
+    color: #374151;
+}

@@ -1,0 +1,262 @@
+.admin-dashboard {
+    width: 100%;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats-grid {
+    margin-bottom: 4px;
+}
+
+
+/* =========================
+   STAT CARD
+========================= */
+
+.stat-card {
+    min-height: 118px;
+
+    border-radius: 14px;
+
+    border: 1px solid;
+
+    padding: 18px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Title */
+
+.stat-title {
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.6px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Number */
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+
+    line-height: 30px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Description */
+
+.stat-description {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+/* Icon */
+
+.stat-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 17px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   CARD COLORS
+========================= */
+
+.students-card {
+    background: #eff6ff;
+    border-color: #dbeafe;
+    color: #2452a4;
+}
+
+.students-card .stat-icon {
+    background: #286be5;
+}
+
+
+.teachers-card {
+    background: #eef2ff;
+    border-color: #dce3ff;
+    color: #343b91;
+}
+
+.teachers-card .stat-icon {
+    background: #5045e5;
+}
+
+
+.courses-card {
+    background: #faf3ff;
+    border-color: #eee0ff;
+    color: #642a8e;
+}
+
+.courses-card .stat-icon {
+    background: #9d4edd;
+}
+
+
+.departments-card {
+    background: #fffbea;
+    border-color: #f9edbd;
+    color: #744b0b;
+}
+
+.departments-card .stat-icon {
+    background: #f5a000;
+}
+
+
+.active-card {
+    background: #edfff6;
+    border-color: #c9f5df;
+    color: #087c5a;
+}
+
+.active-card .stat-icon {
+    background: #10b981;
+}
+
+
+.inactive-card {
+    background: #fff1f1;
+    border-color: #ffdada;
+    color: #a91d2e;
+}
+
+.inactive-card .stat-icon {
+    background: #ef3d5a;
+}
+
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-actions {
+    background: white;
+
+    border: 1px solid #e1e7ef;
+
+    border-radius: 14px;
+
+    padding: 16px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+
+.quick-actions h5 {
+    margin: 0 0 14px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #172033;
+}
+
+
+/* =========================
+   ACTION CARD
+========================= */
+
+.action-card {
+    width: 100%;
+    min-height: 84px;
+
+    background: white;
+
+    border: 1px solid #e0e6ef;
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    margin-bottom: 0;
+}
+
+
+.action-card:hover {
+    border-color: #b9cdf2;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   ACTION ICON
+========================= */
+
+.action-icon {
+    width: 32px;
+    height: 32px;
+
+    background: #eef5ff;
+
+    color: #3976d8;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+.action-card span {
+    color: #172033;
+
+    font-size: 12px;
+    font-weight: 600;
+}

@@ -1,0 +1,520 @@
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: #0d172a;
+    color: #9ba8bd;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1100;
+
+    transition: width 0.3s ease;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.sidebar-header {
+    height: 70px;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #263149;
+
+    flex-shrink: 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.brand-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+.brand-text {
+    margin-left: 11px;
+    white-space: nowrap;
+
+    transition: opacity 0.2s ease;
+}
+
+.brand-name {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.brand-subtitle {
+    color: #7f8ca3;
+    font-size: 8px;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+
+/* =========================
+   COLLAPSE BUTTON
+========================= */
+
+.collapse-btn {
+    border: none;
+    background: transparent;
+
+    color: #53627a;
+
+    font-size: 13px;
+
+    width: 25px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.collapse-btn:hover {
+    color: white;
+}
+
+
+/* =========================
+   SIDEBAR CONTENT
+========================= */
+
+.sidebar-content {
+    flex: 1;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 25px 12px 15px;
+}
+
+
+/* Scrollbar */
+
+.sidebar-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+    background: #39465d;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   MENU TITLE
+========================= */
+
+.menu-title {
+    color: #68758b;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    padding: 0 12px;
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   SIDEBAR MENU
+========================= */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+/* NavLink */
+
+.menu-link {
+    display: block;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   MENU ITEM
+========================= */
+
+.menu-item {
+    height: 43px;
+
+    padding: 0 13px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* Hover */
+
+.menu-link:hover .menu-item {
+    background: #17243a;
+    color: #dce4ef;
+}
+
+
+/* =========================
+   ACTIVE MENU
+========================= */
+
+.menu-link.active .menu-item {
+    background: #1b2b42;
+    color: white;
+}
+
+
+/* Active blue line */
+
+.menu-link.active .menu-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 7px;
+
+    width: 3px;
+    height: 29px;
+
+    background: #2878f0;
+
+    border-radius: 0 4px 4px 0;
+}
+
+
+/* =========================
+   MENU ICON
+========================= */
+
+.menu-icon {
+    width: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   MENU TEXT
+========================= */
+
+.menu-text {
+    margin-left: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition:
+        opacity 0.2s ease,
+        margin 0.2s ease;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.menu-badge {
+    margin-left: auto;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: #286fe0;
+    color: white;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================
+   ACCOUNT
+========================= */
+
+.account-section {
+    margin-top: 25px;
+}
+
+.logout {
+    margin-top: 5px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.sidebar-profile {
+    min-height: 67px;
+
+    border-top: 1px solid #263149;
+
+    padding: 12px 20px;
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    background: #0d172a;
+}
+
+
+/* Avatar */
+
+.sidebar-avatar {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    background: #168eaa;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    flex-shrink: 0;
+}
+
+
+/* User Details */
+
+.sidebar-user-details {
+    margin-left: 10px;
+
+    white-space: nowrap;
+
+    transition: opacity 0.2s ease;
+}
+
+.sidebar-user-name {
+    color: white;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sidebar-user-role {
+    color: #75839a;
+
+    font-size: 10px;
+
+    margin-top: 2px;
+}
+
+
+/* =========================
+   COLLAPSED SIDEBAR
+========================= */
+
+.sidebar.collapsed {
+    width: 75px;
+}
+
+
+/* Header */
+
+.sidebar.collapsed .sidebar-header {
+    padding: 0 18px;
+    justify-content: center;
+}
+
+
+/* Hide brand text */
+
+.sidebar.collapsed .brand-text {
+    display: none;
+}
+
+
+/* Rotate collapse arrow */
+
+.sidebar.collapsed .collapse-btn {
+    position: absolute;
+
+    right: 5px;
+    top: 20px;
+
+    transform: rotate(180deg);
+}
+
+
+/* Content */
+
+.sidebar.collapsed .sidebar-content {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+/* Menu title */
+
+.sidebar.collapsed .menu-title {
+    opacity: 0;
+    height: 15px;
+}
+
+
+/* Center menu item */
+
+.sidebar.collapsed .menu-item {
+    justify-content: center;
+    padding: 0;
+}
+
+
+/* Active line */
+
+.sidebar.collapsed .menu-link.active .menu-item::before {
+    left: -12px;
+}
+
+
+/* Hide text and badge */
+
+.sidebar.collapsed .menu-text,
+.sidebar.collapsed .menu-badge {
+    display: none;
+}
+
+
+/* Icon */
+
+.sidebar.collapsed .menu-icon {
+    width: auto;
+}
+
+
+/* Profile */
+
+.sidebar.collapsed .sidebar-profile {
+    justify-content: center;
+    padding: 12px;
+}
+
+.sidebar.collapsed .sidebar-user-details {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 75px;
+    }
+
+    .sidebar .brand-text,
+    .sidebar .menu-text,
+    .sidebar .menu-badge,
+    .sidebar .sidebar-user-details {
+        display: none;
+    }
+
+    .sidebar .sidebar-header {
+        justify-content: center;
+    }
+
+    .sidebar .menu-item {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .sidebar .menu-icon {
+        width: auto;
+    }
+
+    .sidebar .sidebar-profile {
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .sidebar .menu-link.active .menu-item::before {
+        left: -12px;
+    }
+}

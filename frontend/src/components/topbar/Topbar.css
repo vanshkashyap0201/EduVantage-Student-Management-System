@@ -1,0 +1,273 @@
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+    min-height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+.page-heading {
+    text-decoration: none;
+    color: #172033 !important;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.page-heading h5 {
+    font-size: 18px;
+}
+
+.page-heading small {
+    font-size: 12px;
+}
+
+
+/* Hide heading while searching */
+
+.hide-heading {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+    transition: all 0.3s ease;
+}
+
+
+/* When search is active */
+
+.topbar-right.searching {
+    flex: 1;
+    margin-left: 0;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    width: 250px;
+    height: 40px;
+
+    border: 1px solid #dee2e6;
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    transition:
+        width 0.4s ease,
+        border 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Search expands */
+
+.topbar-right.searching .search-box {
+    width: 100%;
+}
+
+
+/* Search focus */
+
+.search-box:focus-within {
+    border: 2px solid #b8d8ff;
+    box-shadow: 0 0 0 3px rgba(184, 216, 255, 0.15);
+}
+
+
+/* Search icon */
+
+.search-box .input-group-text {
+    background: white;
+    border: none;
+    color: #9aa5b5;
+    padding-left: 15px;
+}
+
+
+/* Input */
+
+.search-box .form-control {
+    border: none;
+    font-size: 13px;
+    box-shadow: none !important;
+    padding-left: 5px;
+}
+
+
+/* Remove browser search clear styling */
+
+.search-box .form-control::-webkit-search-cancel-button {
+    cursor: pointer;
+}
+
+
+/* =========================
+   HIDE ITEMS
+========================= */
+
+.hide-item {
+    display: none !important;
+}
+
+
+/* =========================
+   NOTIFICATION
+========================= */
+
+.notification {
+    color: #7c8798;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.notification-count {
+    position: absolute;
+
+    top: -10px;
+    right: -9px;
+
+    font-size: 9px;
+
+    min-width: 17px;
+    height: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-toggle {
+    background: white !important;
+    padding: 0;
+    box-shadow: none !important;
+}
+
+.profile-toggle::after {
+    display: none;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #168eaa;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #172033;
+    white-space: nowrap;
+}
+
+.profile-details small {
+    font-size: 11px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .topbar {
+        padding: 10px 12px !important;
+    }
+
+    .topbar .container-fluid {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .topbar-right {
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 180px;
+    }
+
+    .profile-details {
+        display: none;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .topbar {
+        padding: 8px 10px !important;
+    }
+
+    .topbar .container-fluid {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .topbar-right {
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 140px;
+    }
+
+    .page-heading h5 {
+        font-size: 15px;
+    }
+
+    .page-heading small {
+        font-size: 11px;
+    }
+
+    .profile-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+}

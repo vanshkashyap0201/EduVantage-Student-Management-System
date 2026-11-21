@@ -1,0 +1,122 @@
+/* Student form container */
+.student-form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Fields layout */
+.student-form-row {
+    row-gap: 18px;
+}
+
+/* Form buttons */
+.student-form-submit {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.student-form-submit button {
+    min-height: 40px;
+    min-width: 120px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* Cancel button */
+.student-form-submit .btn-secondary {
+    background: #ffffff;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.student-form-submit .btn-secondary:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+/* Add Student button */
+.student-form-submit .btn-primary {
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
+    color: #ffffff;
+}
+
+.student-form-submit .btn-primary:hover {
+    background: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+/* Parent section */
+.parents-section {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.parents-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.parents-section-header h5 {
+    margin: 0;
+}
+
+/* Individual parent card */
+.parent-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.parent-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.parent-card-header h6 {
+    margin: 0;
+}
+
+/* Responsive spacing */
+@media (max-width: 576px) {
+    .student-form-container {
+        padding: 16px;
+    }
+
+    .parents-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .student-form-submit {
+        flex-wrap: wrap;
+    }
+
+    .student-form-submit button {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .parent-card {
+        padding: 12px;
+    }
+}
